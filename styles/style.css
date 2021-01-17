@@ -1,0 +1,296 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Mukta';
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.25em;
+}
+
+hr {
+    border: 2px solid rgb(235, 235, 235);
+    margin-inline: 2%;
+    margin-block: 3%;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #16AB84;
+    font-family: 'Mukta';
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background-color: #27c298;
+}
+
+li {
+    text-align: left;
+}
+
+.content {
+    margin-top: 80px;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #16AB84;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 9999;
+}
+  
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    padding-inline: 19px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 25px;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+}
+
+.header a:hover {
+    color: #ededed;
+}
+
+.headerRight a {
+    float: right;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+
+.title h1 {
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+}
+
+.logoImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.text {
+    display: block;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.textSpace {
+    display: block;
+    width: 100% !important;
+    color: #111;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 0;
+    background-color: white;
+}
+
+.courses{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.courseCard{   
+    width: 27% !important;
+    margin: auto;
+    box-shadow: 0px 3px 7px rgb(90, 90, 90);
+    background-color: rgb(255, 255, 255);
+    padding-block: 3%;
+    padding-inline: auto;
+    border-radius: 10px;
+}
+
+.cardLogo{
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.courseCard ol{
+    font-size: 1.0em;
+    font-family: "Mukta";
+    margin: 0;
+    margin-inline: 3%;
+    float: left;
+    color: rgb(0, 0, 0);
+}
+
+.courseCard p{
+    color: rgb(0, 0, 0); 
+    text-align: left;
+    margin-inline: 6%;
+    text-align: left;
+    font-family: 'Mukta';
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+.courseCard h1{
+    width: 100% !important;
+    padding-block: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins';
+    font-weight: 20;
+    font-size: 2.65em;
+}
+
+.courseCard h2{
+    color: rgb(0, 0, 0); 
+    text-align: left;
+    margin-left: 6%;
+    font-family: 'Mukta';
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.teamArea{
+    margin-top: 5%;
+    padding: 5%;
+    padding-bottom: 2%;
+    color: white;
+    background-color: rgb(26, 26, 26);
+}
+
+.characterArea{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.character{
+    padding-block: 3%;
+    width: 23%;
+    color: white;
+}
+
+.character h1{
+    font-size: 2em;
+}
+
+.character h2{
+    margin: 0;
+    padding: 0;
+}
+
+.character img{
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 144px;
+    height: 144px;
+}
+
+.urlIcons{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-inline: 30%;
+}
+
+.urlIcons img{
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+
+
+.whatWeDo {
+    background-color: white;
+}
+
+.courses {
+    background-color: white;
+}
+
+.syllabusArea {
+    background-color: white;
+}
+
+a.anchor {
+	position: relative;
+	top: -100px;
+	visibility: hidden;
+}	
+
+
+.taglineCard {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0px 3px 7px rgb(90, 90, 90);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+.taglineCard h1 {
+    font-size: 2em;
+}
+
+.taglines {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: space-between;
+    display: flex;
+}
