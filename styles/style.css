@@ -210,14 +210,14 @@ li {
 }
 
 .characterArea{
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 5%;
 }
 
 .character{
     padding-block: 3%;
-    width: 23%;
+    width: 100%;
     color: white;
 }
 
@@ -228,6 +228,7 @@ li {
 .character h2{
     margin: 0;
     padding: 0;
+    font-weight: normal;
 }
 
 .character img{
@@ -241,7 +242,13 @@ li {
     display: flex;
     justify-content: space-between;
     padding-top: 5%;
-    padding-inline: 30%;
+    margin: auto;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+.urlIcons a {
+    margin: auto;
 }
 
 .urlIcons img{
