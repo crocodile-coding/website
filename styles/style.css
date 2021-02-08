@@ -40,6 +40,8 @@ button {
     border-radius: 10px;
     margin-bottom: 20px;
     transition-duration: 0.2s;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 button:hover {
