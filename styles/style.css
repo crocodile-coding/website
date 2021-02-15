@@ -1,24 +1,49 @@
-/* Layout hierarchy */
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0px;
-    font-family: 'Mukta';
-}
-
-.info-section h1 {
-    margin-bottom: 0px;
-    margin-top: 0px;
-    font-size: 2.5em;
-    text-align: center;
+/* Random styles */
+hr {
+    width: 90%;
+    border: 2px solid #ebebeb;
+    background-color: #ebebeb;
 }
 
 p {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1.25em;
+}
+
+a.anchor {
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+
+/* Layout hierarchy */
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    font-family: 'Mukta';
+}
+
+
+/* ---------- HEADER ---------- */
+#header {
+
+    /* Layout */
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    /* Styles */
+    background-color: #16AB84;
+    width: 100%;
+    height: 5vh;
+
 }
 
 #header button {
@@ -29,6 +54,48 @@ p {
     padding: 0 2.0em;
     height: 5vh;
 
+}
+
+#header a {
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 25px;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+}
+
+.header a:hover {
+    color: #ededed;
+}
+
+/* ----- MAIN PAGE ----- */
+#content {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* ---------- TITLE ---------- */
+#title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+    width: 50%;
+    color: white;
+    text-align: center;
 }
 
 #title button {
@@ -52,75 +119,38 @@ p {
 
 }
 
-button:hover {
-    background-color: #27c298;
+#title button:hover {
     font-weight: bold;
-}
-
-.content {
-    margin-top: 80px;
-}
-
-#header {
-
-    /* Layout */
-    position: sticky;
-    top: 0;
-    left: 0;
-
-    /* Styles */
-    background-color: #16AB84;
-    width: 100%;
-    height: 5vh;
-
-}
-
-#header a {
-    float: left;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 22px;
-    line-height: 25px;
-    border-radius: 4px;
-    transition-duration: 0.2s;
-}
-
-.header a:hover {
-    color: #ededed;
-}
-
-.backgroundImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-#title {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 15px;
-    width: 50%;
-    color: white;
-    text-align: center;
 }
 
 #title h1 {
     margin-top: 0px;
     font-family: 'Poppins', sans-serif;
-    font-size: 5em;
 }
 
-.logoImage {
+#logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    
+}
+
+/* ---------- INFO SECTIONS ---------- */
+
+.info-section {
+    padding: 3% 0%;
+    width: 100%;
+    color: #111;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.info-section h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 2.5em;
+    text-align: center;
 }
 
 .text {
@@ -131,13 +161,7 @@ button:hover {
     width: 75%;
 }
 
-.info-section {
-    padding: 3% 0%;
-    width: 100%;
-    color: #111;
-    background-color: #ffffff;
-    box-sizing: border-box;
-}
+/* ---------- COURSES ---------- */
 
 #courses {
     display: flex;
@@ -150,7 +174,7 @@ button:hover {
     margin: auto;
     box-shadow: 0px 3px 7px rgb(90, 90, 90);
     background-color: #ffffff;
-    padding: 2% 0;
+    padding: 2% 2.0em;
     border-radius: 10px;
 }
 
@@ -166,16 +190,12 @@ button:hover {
 .course-card ol {
     font-size: 1.0em;
     font-family: "Mukta";
-    margin: 0;
-    margin-inline: 3%;
     float: left;
     color: rgb(0, 0, 0);
 }
 
 .course-card p {
     color: rgb(0, 0, 0);
-    text-align: left;
-    margin-inline: 6%;
     text-align: left;
     font-family: 'Mukta';
     font-size: 1.1em;
@@ -194,10 +214,26 @@ button:hover {
 .course-card h2 {
     color: rgb(0, 0, 0);
     text-align: left;
-    margin-left: 6%;
     font-family: 'Mukta';
     font-size: 1.3em;
     font-weight: 600;
+}
+
+/* ---------- TEAM MEMBERS ---------- */
+#meet-the-team-section {
+    color: #ffffff;
+}
+
+.member-card-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.member-card-info div:last-child {
+    padding-left: 1.0em;
+    flex-basis: 100%;
 }
 
 #member-cards-container {
@@ -247,17 +283,19 @@ button:hover {
     cursor: pointer;
 }
 
-a.anchor {
-    position: relative;
-    top: -100px;
-    visibility: hidden;
-}
+/* ---------- TAGLINES ---------- */
 
+#taglines {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: space-between;
+    display: flex;
+}
 
 .tagline-card {
 
     /* Layout */
-    width: 100%;
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
@@ -270,34 +308,4 @@ a.anchor {
 
 .tagline-card h1 {
     font-size: 2em;
-}
-
-#taglines {
-    width: 90%;
-    margin: auto;
-    margin-top: 30px;
-    justify-content: space-between;
-    display: flex;
-}
-
-hr {
-    width: 90%;
-    border: 2px solid #ebebeb;
-    background-color: #ebebeb;
-}
-
-#meet-the-team-section {
-    color: #ffffff;
-}
-
-.member-card-info {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-}
-
-.member-card-info div:last-child {
-    padding-left: 1.0em;
-    flex-basis: 100%;
 }
