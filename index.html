@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,149 +9,156 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta">
     <title>Crocodile Coding</title>
 </head>
+
 <body>
-    <div class="header" id="header">
-        <a onclick="scrollToTop()" href="#" style="font-weight: bold;">Crocodile Coding</a>
-        <div class="headerRight">
-            <a href="https://forms.gle/rSf2DaJx5TW5qttdA">Sign Up</a>
-            <a href="#meet-the-team-anchor">Meet the Team</a>
-            <a href="#course-anchor">Courses</a>
-            <a href="#what-we-do-anchor">What We Do</a>
-        </div>
+    
+    <div id="header">
+        <button onclick="scrollToTop()"><a href="#" style="font-weight: bold;">Crocodile Coding</a></button>
+        <button style="float: right"><a href="https://forms.gle/rSf2DaJx5TW5qttdA">Sign Up</a></button>
+        <button style="float: right"><a href="#meet-the-team-anchor">Meet the Team</a></button>
+        <button style="float: right"><a href="#course-anchor">Courses</a></button>
+        <button style="float: right"><a href="#what-we-do-anchor">What We Do</a></button>
     </div>
+
     <div class="content">
+    
         <img src="images/backgroundBlur.png" alt="" class="backgroundImage">
-        <div class="title">
-            <div style="z-index: 9999999;"><img src="images/logo.png" alt="" class="logoImage"></div>
+        <div id="title">
+            <img src="images/logo.png" alt="" class="logoImage">
             <h1>Crocodile Coding</h1>
             <a href="https://forms.gle/rSf2DaJx5TW5qttdA"><button>Sign Up</button></a>
             <a href="https://forms.gle/mXS16Vh9N9Zs3fwq8"><button>Join the Team</button></a>
         </div>
-		<a id="what-we-do-anchor"></a>
-        <div class="textSpace">
-            <div class="whatWeDo" id="whatWeDo">
-				<a class="anchor" id="what-we-do-anchor"></a>
+        
+        <div style="background-color: #ffffff;">
+        
+            <div class="info-section">
+                <a class="anchor" id="what-we-do-anchor"></a>
                 <h1>What We Do</h1>
                 <div class="text">
-                    <p>Crocodile Coding is a tutoring organization founded by four high schoolers from the Bay Area. 
-                        We are dedicated to teaching children coding and inspiring them to pursue programming as a passion. 
-                        We currently start with 4th to 8th grade students who are seeking to learn the rudiments of computer science, and, in the future, 
-                        we will offer courses about further advanced concepts and languages such as Python and JavaScript. 
-                        We hope to introduce children to the marvels of computer science and kindle their enthusiasm for its applications. 
+                    <p>Crocodile Coding is a tutoring organization founded by four high schoolers from the Bay Area.
+                        We are dedicated to teaching children coding and inspiring them to pursue programming as a
+                        passion.
+                        We currently start with 4th to 8th grade students who are seeking to learn the rudiments of
+                        computer science, and, in the future,
+                        we will offer courses about further advanced concepts and languages such as Python and
+                        JavaScript.
+                        We hope to introduce children to the marvels of computer science and kindle their enthusiasm for
+                        its applications.
                     </p>
                 </div>
-                <div class="taglines">
-                    <div class="taglineCard">
+                <div id="taglines">
+                    <div class="tagline-card">
                         <h1>Online Classes</h1>
-                        <p>Due to the COVID-19 pandemic, we use Zoom to teach our students virtually and to maintain the safety of our community.</p>
+                        <p>Due to the COVID-19 pandemic, we use Zoom to teach our students virtually and to maintain the
+                            safety of our community.</p>
                     </div>
-                    <div class="taglineCard">
+                    <div class="tagline-card">
                         <h1>Customized Curriculum</h1>
-                        <p>Our course material is carefully crafted to build a strong foundation, developing skills that will give young coders the ability to go far in their future endeavours.</p>
+                        <p>Our course material is carefully crafted to build a strong foundation, developing skills that
+                            will give young coders the ability to go far in their future endeavours.</p>
                     </div>
-                    <div class="taglineCard">
+                    <div class="tagline-card">
                         <h1>Experienced Instructors</h1>
-                        <p>All of our instructors have years of programming experience, ensuring your child is being taught by those well-versed in the world of computer science.</p>
+                        <p>All of our instructors have years of programming experience, ensuring your child is being
+                            taught by those well-versed in the world of computer science.</p>
                     </div>
                 </div>
             </div>
+
             <hr>
-            <div class="syllabusArea">
-				<a class="anchor" id="course-anchor"></a>
+            
+            <div class="info-section">
+                <a class="anchor" id="course-anchor"></a>
                 <h1>Courses</h1>
-                <div class="courses" id="courses">
-                    <div class="courseCard">
+                <div id="courses">
+                    <div class="course-card">
                         <img src="images/scratch.png" class="cardLogo">
                         <h1>Scratch</h1>
-                        <div class="cardContent">
-                            <p style="text-align: center;">Learn Scratch, a basic yet flexible visual programming language developed by MIT for beginners. 
-                                This class is an excellent introduction to the world of programming, and one that's sure to interest young students.</p>
-                            <h2>Course Curriculum</h2>
-                            <ol>
-                                <li>What is Coding?</li>
-                                <li>Sprites and Backdrops</li>
-                                <li>Movement and Position</li>
-                                <li>Variables</li>
-                                <li>Math Operators</li>
-                                <li>Boolean Operators</li>
-                                <li>Conditionals</li>
-                                <li>Broadcasting and Sensing</li>
-                                <li>Loops</li>
-                                <li>More Math Operators</li>
-                                <li>Functions and Parameters</li>
-                                <li>Sprite Words and Word Operators</li>
-                                <li>Clones</li>
-                                <li>Lists</li>
-                            </ol>
-                        </div>
-                    </div> 
-
+                        <p style="text-align: center;">Learn Scratch, a basic yet flexible visual programming
+                            language developed by MIT for beginners.
+                            This class is an excellent introduction to the world of programming, and one that's sure
+                            to interest young students.</p>
+                        <h2>Course Curriculum</h2>
+                        <ol>
+                            <li>What is Coding?</li>
+                            <li>Sprites and Backdrops</li>
+                            <li>Movement and Position</li>
+                            <li>Variables</li>
+                            <li>Math Operators</li>
+                            <li>Boolean Operators</li>
+                            <li>Conditionals</li>
+                            <li>Broadcasting and Sensing</li>
+                            <li>Loops</li>
+                            <li>More Math Operators</li>
+                            <li>Functions and Parameters</li>
+                            <li>Sprite Words and Word Operators</li>
+                            <li>Clones</li>
+                            <li>Lists</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
-            <div class="teamArea" id="meetTheTeam">
-				<a class="anchor" id="meet-the-team-anchor"></a>
+
+            <div class="info-section" id="meet-the-team-section" style="background-color: #1a1a1a;">
+                <a class="anchor" id="meet-the-team-anchor"></a>
                 <h1>Meet the Team</h1>
-                <div class="characterArea">
-                    <div class = "character">
-                        <img src="images/scratch.png">
+                <div id="member-cards-container">
+                    <div class="member-card">
+                        <a href="https://github.com/jayp570"><img src="images/scratch.png"></a>
                         <h1>Jayant Patil</h1>
                         <h2>Executive Director, Co-founder</h2>
-                        <div class="urlIcons">
-                            <a href="https://github.com/jayp570"><img src="images/github.png"></a>
-                        </div>
+                        <p>Hi! I'm Jay and I am a sophomore at Mountain View High School. I have avidly practiced coding
+                            for five years now in Java, Python, and JavaScript, making mostly games and web apps. Aside
+                            from programming, I enjoy art, history, and playing video games.</p>
                     </div>
-                    <div class = "character">
-                        <img src="images/scratch.png">
+                    <div class="member-card">
+                        <a href="https://github.com/adrian154"><img src="images/scratch.png"></a>
                         <h1>Adrian Zhang</h1>
                         <h2>Head of Technology, Co-founder</h2>
-                        <div class="urlIcons">
-                            <a href="https://github.com/adrian154"><img src="images/github.png"></a>
-                        </div>
+                        <p>Hello, I am Adrian! I am a 10th grader at Mission San Jose High School. I've been programming
+                            for many years now, and am fluent in Java, JavaScript, C, and Assembly. I spend most of my
+                            time coding small web applications or working on low-level projects. I am also very
+                            interested in 3D graphics. When I'm not coding, you can find me playing Minecraft.</p>
                     </div>
-                    <div class = "character">
-                        <img src="images/scratch.png">
+                    <div class="member-card">
+                        <a href="https://github.com/akarsho"><img src="images/scratch.png"></a>
                         <h1>Akarsh Ojha</h1>
                         <h2>Head of Tutoring, Co-founder</h2>
-                        <div class="urlIcons">
-                            <a href="https://github.com/akarsho"><img src="images/github.png"></a>
-                        </div>
+                        <p>Hello everybody, I'm Akarsh! I'm currently a 10th grader at Basis Independent Silicon Valley.
+                            I have been pursuing and CS and programming for about five years, especially creating tiny
+                            projects in the languages C, Cpp, Java, JavaScript, and I'm extremely excited to work with
+                            our officers to educate others on the science behind computers. Asides from that, I largely
+                            enjoy music and playing video games.</p>
                     </div>
-                </div>
-                <div class="characterArea" style="width: 65%;">
-                    <div class = "character">
+                    <div class="member-card">
                         <img src="images/scratch.png">
                         <h1>Adrian Chu</h1>
                         <h2>Head of Tutoring, Co-founder</h2>
-                        <div class="urlIcons">
-                        </div>
                     </div>
-                    <div class = "character">
+                    <div class="member-card">
                         <img src="images/scratch.png">
                         <h1>Sharan Tamber</h1>
                         <h2>Head of Marketing</h2>
-                        <div class="urlIcons">
-                        </div>
+                        <p>Hey! I'm Sharan, a sophomore at Mission San Jose High School. I'm very passionate about
+                            expanding Crocodile Coding and watching it grow! Outside of Crocodile Coding, you can find
+                            me listening to music or playing video games.</p>
                     </div>
                 </div>
-                <p class="contactUs">Questions? You can contact us at <span style="color: #27c298;">crocodilecoding@gmail.com</span></p>
-            </div>
-
-
+           </div>
+        
         </div>
-        
-        
+
     </div>
 
-
     <script>
-
-        function scrollToTop() {
+        const scrollToTop = () => {
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
-
     </script>
 
 
 </body>
+
 </html>
