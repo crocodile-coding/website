@@ -8,7 +8,7 @@ body {
     font-family: 'Mukta';
 }
 
-h1 {
+.info-section h1 {
     margin-bottom: 0px;
     margin-top: 0px;
     font-size: 2.5em;
@@ -215,23 +215,22 @@ button:hover {
     /* Layout */
     margin: 1.0em;
     padding: 1.5em;
-    max-width: 30.0em;
+    max-width: 25.0em;
 
     /* Styling */
     border-radius: 5px;
     background-color: #ffffff;
     color: #222222;
-    text-align: center;
 
 }
 
 .member-card p {
-    text-align: left;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .member-card h1 {
     font-size: 2em;
+    text-align: left;
 }
 
 .member-card h2 {
@@ -289,4 +288,16 @@ hr {
 
 #meet-the-team-section {
     color: #ffffff;
+}
+
+.member-card-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.member-card-info div:last-child {
+    padding-left: 1.0em;
+    flex-basis: 100%;
 }
