@@ -42,7 +42,6 @@ body {
     /* Styles */
     background-color: #16AB84;
     width: 100%;
-    height: 5vh;
 
 }
 
@@ -159,6 +158,34 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
+}
+
+
+/* ---------- TAGLINES ---------- */
+#taglines {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.tagline-card {
+
+    /* Layout */
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+
+    /* Styling */
+    background-color: rgb(255, 255, 255);
+    font-size: 0.9em;
+
+}
+
+.tagline-card h1 {
+    font-size: 2em;
 }
 
 /* ---------- COURSES ---------- */
@@ -281,31 +308,4 @@ body {
     width: 144px;
     height: 144px;
     cursor: pointer;
-}
-
-/* ---------- TAGLINES ---------- */
-
-#taglines {
-    width: 90%;
-    margin: auto;
-    margin-top: 30px;
-    justify-content: space-between;
-    display: flex;
-}
-
-.tagline-card {
-
-    /* Layout */
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px;
-
-    /* Styling */
-    background-color: rgb(255, 255, 255);
-    font-size: 0.9em;
-
-}
-
-.tagline-card h1 {
-    font-size: 2em;
 }
