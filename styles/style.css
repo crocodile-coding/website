@@ -180,6 +180,10 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .tagline-card {
+        margin-bottom: 2.0em;
+    }
 }
 
 .tagline-card {
