@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta">
-    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
-    <title>Crocodile Coding</title>
-</head>
-
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Crocodile Coding">
+        <meta property="og:description" content="Crocodile Coding is a tutoring organization founded by four high schoolers from the Bay Area.">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta">
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+        <title>Crocodile Coding</title>
+    </head>
+    <body>
     
-    <div id="header">
-        <button onclick="scrollToTop()"><a href="#" style="font-weight: bold;">Crocodile Coding</a></button>
-        <button><a href="https://forms.gle/rSf2DaJx5TW5qttdA">Sign Up</a></button>
-        <button><a href="#what-we-do-anchor">What We Do</a></button>
-        <button><a href="#course-anchor">Courses</a></button>
-        <button><a href="#meet-the-team-anchor">Meet the Team</a></button>
-    </div>
-
-    <div id="content">
+        <div id="header">
+            <button><a href="#top" style="font-weight: bold;">Crocodile Coding</a></button>
+            <button><a href="https://forms.gle/rSf2DaJx5TW5qttdA">Sign Up</a></button>
+            <button><a href="#what-we-do-anchor">What We Do</a></button>
+            <button><a href="#course-anchor">Courses</a></button>
+            <button><a href="#meet-the-team-anchor">Meet the Team</a></button>
+        </div>
     
-        <img src="images/backgroundBlur.png" alt="" class="backgroundImage">
+        <img src="images/backgroundBlur.png" alt="" id="background-image">
+        
         <div id="title">
             <img src="images/logo.png" alt="" id="logo">
             <h1>Crocodile Coding</h1>
@@ -81,7 +80,7 @@
                                 language developed by MIT for beginners.
                                 This class is an excellent introduction to the world of programming, and one that's sure
                                 to interest young students.</p>
-                            <h2>Course Curriculum</h2>
+                            <h2>Curriculum</h2>
                             <ol>
                                 <li>What is Coding?</li>
                                 <li>Sprites and Backdrops</li>
@@ -97,6 +96,19 @@
                                 <li>Sprite Words and Word Operators</li>
                                 <li>Clones</li>
                                 <li>Lists</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="course-card-outer">
+                        <div class="course-card">
+                            <img src="images/scratch.png" class="cardLogo">
+                            <h1>Python</h1>
+                            <p>Learn Python, a typed programming language that is easy to learn for beginners with its English-like syntax.
+                                This course covers foundational programming concepts for late-elementary and middle school aged students and
+                                is will be able to act as a stepping stone for future coding endeavors. </p>
+                            <h2>Curriculum</h2>
+                            <ol>
+                                <li>test</li>
                             </ol>
                         </div>
                     </div>
@@ -188,18 +200,17 @@
                     </div>
                 </div>
                 <p style="text-align: center;">Questions? Comments? Concerns? Email us at crocodilecoding@gmail.com, and we'll be happy to help!</p>
-           </div>
         </div>
-    </div>
+        </div>
 
-    <script>
-        const scrollToTop = () => {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-    </script>
+        <script>
+            const scrollToTop = () => {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
 
 
-</body>
+    </body>
 
 </html>
