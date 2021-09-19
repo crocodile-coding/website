@@ -14,11 +14,14 @@
     <body>
     
         <div id="header">
-            <button><a href="#top" style="font-weight: bold;">Crocodile Coding</a></button>
-            <button><a href="https://forms.gle/rSf2DaJx5TW5qttdA">Sign Up</a></button>
-            <button><a href="#what-we-do-anchor">What We Do</a></button>
-            <button><a href="#course-anchor">Courses</a></button>
-            <button><a href="#meet-the-team-anchor">Meet the Team</a></button>
+            <button id="burger" onclick="toggle()">&#9776;</button>
+            <button id="main-button"><a href="#top" style="font-weight: bold;">Crocodile Coding</a></button>
+            <div id="other-buttons">
+                <button><a href="https://forms.gle/rSf2DaJx5TW5qttdA">Sign Up</a></button>
+                <button><a href="#what-we-do-anchor">What We Do</a></button>
+                <button><a href="#course-anchor">Courses</a></button>
+                <button><a href="#meet-the-team-anchor">Meet the Team</a></button>
+            </div>
         </div>
     
         <img src="images/backgroundBlur.png" alt="" id="background-image">
@@ -38,13 +41,17 @@
                 <div class="text">
                     <p>Crocodile Coding is a tutoring organization founded by four high schoolers from the Bay Area.
                         Our mission is to encourage students to pursue programming as a passion by teaching them basic and advanced computer science skills.
+                        If you're interested in enrolling a student in our program, simply <a href="https://forms.gle/rSf2DaJx5TW5qttdA">sign up</a> at our online Google form.
+                        Volunteers who are interested in tutoring with us are also welcome;
+                        please apply <a href="https://docs.google.com/forms/d/e/1FAIpQLSclpjXFU6yDennJ4hGAfWyfNbzWg4uOAVeodybN10PKqgGX7Q/viewform">here</a>, 
+                        or contact us directly at <a href="mailto:crocodilecoding@gmail.com">crocodilecoding@gmail.com</a>.
                     </p>
                 </div>
                 <div id="taglines">
                     <div class="tagline-card">
                         <h1>Online Classes</h1>
-                        <p>Due to the COVID-19 pandemic, we use Google Meets to teach our students virtually and to maintain the
-                            safety of our community.</p>
+                        <p>Due to the COVID-19 pandemic, our classes are held over Google Meets to ensure the
+                            safety of our students and instructors.</p>
                     </div>
                     <div class="tagline-card">
                         <h1>Customized Curriculum</h1>
@@ -53,8 +60,7 @@
                     </div>
                     <div class="tagline-card">
                         <h1>Experienced Instructors</h1>
-                        <p>All of our instructors have years of programming experience, ensuring your child is being
-                            taught by those well-versed in the world of computer science.</p>
+                        <p>All of our tutors have years of programming experience and are well-equipped to engage with students of all skill levels.</p>
                     </div>
                 </div>
             </div>
@@ -65,45 +71,43 @@
                 <a class="anchor" id="course-anchor"></a>
                 <h1>Courses</h1>
                 <div id="courses">
-                    <div class="course-card-outer">
-                        <div class="course-card">
-                            <img src="images/scratch.png" class="cardLogo">
-                            <h1>Scratch</h1>
-                            <p>Learn Scratch, a basic yet flexible visual programming
-                                language developed by MIT for beginners.
-                                This class is an excellent introduction to the world of programming, and one that's sure
-                                to interest young students.</p>
-                            <h2>Curriculum</h2>
-                            <ol>
-                                <li>What is Coding?</li>
-                                <li>Sprites and Backdrops</li>
-                                <li>Movement and Position</li>
-                                <li>Variables</li>
-                                <li>Math Operators</li>
-                                <li>Boolean Operators</li>
-                                <li>Conditionals</li>
-                                <li>Broadcasting and Sensing</li>
-                                <li>Loops</li>
-                                <li>More Math Operators</li>
-                                <li>Functions and Parameters</li>
-                                <li>Sprite Words and Word Operators</li>
-                                <li>Clones</li>
-                                <li>Lists</li>
-                            </ol>
-                        </div>
+                    <div class="course-card">
+                        <img src="images/scratch.png">
+                        <h1>Scratch</h1>
+                        <p>Learn Scratch, a basic yet flexible visual programming
+                            language developed by MIT for beginners.
+                            This class is an excellent introduction to the world of programming, and one that's sure
+                            to interest young students.</p>
+                        <h2>Curriculum</h2>
+                        <ol>
+                            <li>What is Coding?</li>
+                            <li>Sprites and Backdrops</li>
+                            <li>Movement and Position</li>
+                            <li>Variables</li>
+                            <li>Math Operators</li>
+                            <li>Boolean Operators</li>
+                            <li>Conditionals</li>
+                            <li>Broadcasting and Sensing</li>
+                            <li>Loops and Functions</li>
+                            <li>Clones and Lists</li>
+                        </ol>
                     </div>
-                    <div class="course-card-outer">
-                        <div class="course-card">
-                            <img src="images/scratch.png" class="cardLogo">
-                            <h1>Python</h1>
-                            <p>Learn Python, a typed programming language that is easy to learn for beginners with its English-like syntax.
-                                This course covers foundational programming concepts for late-elementary and middle school aged students and
-                                is will be able to act as a stepping stone for future coding endeavors. </p>
-                            <h2>Curriculum</h2>
-                            <ol>
-                                <li>test</li>
-                            </ol>
-                        </div>
+                    <div class="course-card">
+                        <img src="images/python.png">
+                        <h1>Python</h1>
+                        <p>Learn Python, a typed programming language that is easy to learn for beginners with its English-like syntax.
+                            This course covers foundational programming concepts for late-elementary and middle school aged students and
+                            is will be able to act as a stepping stone for future coding endeavors. </p>
+                        <h2>Curriculum</h2>
+                        <ol>
+                            <li>What is Coding?</li>
+                            <li>Input and Output</li>
+                            <li>Variables</li>
+                            <li>Conditionals</li>
+                            <li>Lists and Strings</li> 
+                            <li>Loops and Functions</li>
+                            <li>Graphics</li>
+                        </ol>
                     </div>
                 </div>
             </div>
@@ -115,7 +119,7 @@
                     <div class="member-card">
                         <div class="member-card-info">
                             <div>
-                                <a href="https://github.com/jayp570"><img src="images/jayantpfp.png"></a>
+                                <a href="https://github.com/jayp570"><img src="images/team-members/jayantp.png"></a>
                             </div>
                             <div>
                                 <h1>Jayant Patil</h1>
@@ -131,7 +135,7 @@
                     <div class="member-card">
                         <div class="member-card-info">
                             <div>
-                                <a href="https://github.com/adrian154"><img src="images/adrianzpfp.png"></a>
+                                <a href="https://github.com/adrian154"><img src="images/team-members/adrianz.png"></a>
                             </div>
                             <div>
                                 <h1>Adrian Zhang</h1>
@@ -147,7 +151,7 @@
                     <div class="member-card">
                         <div class="member-card-info">
                             <div>
-                                <a href="https://github.com/akarsho"><img src="images/akarshpfp.png"></a>
+                                <a href="https://github.com/akarsho"><img src="images/team-members/akarsho.png"></a>
                             </div>
                             <div>
                                 <h1>Akarsh Ojha</h1>
@@ -164,7 +168,7 @@
                     <div class="member-card">
                         <div class="member-card-info">
                             <div>
-                                <a href="https://github.com/"><img src="images/adriancpfp.png"></a>
+                                <a href="https://github.com/"><img src="images/team-members/adrianc.png"></a>
                             </div>
                             <div>
                                 <h1>Adrian Chu</h1>
@@ -180,7 +184,7 @@
                     <div class="member-card">
                         <div class="member-card-info">
                             <div>
-                                <a href="https://github.com/"><img src="images/sharanpfp.png"></a>
+                                <a href="https://github.com/"><img src="images/team-members/sharant.png"></a>
                             </div>
                             <div>
                                 <h1>Sharan Tamber</h1>
@@ -200,7 +204,12 @@
             const scrollToTop = () => {
                 document.body.scrollTop = 0; // For Safari
                 document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            }
+            };
+
+            const buttons = document.getElementById("other-buttons");
+            const toggle = () => {
+                buttons.style.display = buttons.style.display === "block" ? "none" : "block";
+            };
         </script>
 
 
